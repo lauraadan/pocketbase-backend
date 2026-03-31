@@ -1,5 +1,5 @@
 /// <reference path="../pb_data/types.d.ts" />
-
+console.log("CORS HOOK LOADED");
 routerUse((e) => {
   e.response.headers.set("Access-Control-Allow-Origin", "*");
   e.response.headers.set(
