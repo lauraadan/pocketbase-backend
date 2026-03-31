@@ -4,11 +4,13 @@ routerUse((e) => {
     "Access-Control-Allow-Methods",
     "GET, POST, PUT, DELETE, OPTIONS",
   );
-  e.response.headers.set("Access-Control-Allow-Headers", "*");
-  e.response.headers.set("Access-Control-Allow-Credentials", "true");
+  e.response.headers.set(
+    "Access-Control-Allow-Headers",
+    "Content-Type, Authorization",
+  );
 
   if (e.request.method === "OPTIONS") {
-    return e.string(200, "OK");
+    return e.noContent(204);
   }
 
   return e.next();
