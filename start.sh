@@ -1,1 +1,1 @@
-./pocketbase serve --http=0.0.0.0:$PORT --origins="https://lauraadan.github.io"
+./pocketbase serve --http=0.0.0.0:$PORT --origins="*"
